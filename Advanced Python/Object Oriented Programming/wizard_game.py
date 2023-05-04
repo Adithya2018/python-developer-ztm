@@ -5,6 +5,7 @@ class PlayerCharacter:
     # Special Method (Initialization)
     # Dunder or Magic Method
     def __init__(self, name, age):
+        # attributes
         self.name = name
         self.age = age
 
@@ -20,3 +21,4 @@ player2.defense = 100
 
 print(player1.name, player1.age, player1.attack)
 print(player2.name, player2.age, player2.defense)
+
