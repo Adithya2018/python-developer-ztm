@@ -28,6 +28,14 @@ class PlayerCharacter:
     def adding_things(cls, num1, num2):
         return num1 + num2
 
+    @classmethod
+    def age_generate(cls, num1, num2):
+        return cls('Teddy', num1 + num2)
+
+    @staticmethod
+    def subtract_things(num1, num2):
+        return num1 + num2
+
 
 player1 = PlayerCharacter('Adi', 23)
 player2 = PlayerCharacter('Druva', 21)
@@ -53,3 +61,9 @@ player3.shout()
 print(player1.adding_things(2, 3))
 
 print(PlayerCharacter.adding_things(3, 4))
+
+player4 = PlayerCharacter.age_generate(10, 23)
+
+player4.shout()
+
+print(PlayerCharacter.subtract_things(3, 4))
