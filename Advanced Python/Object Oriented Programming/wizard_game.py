@@ -24,6 +24,10 @@ class PlayerCharacter:
     def power_attack(self, power_level):
         print(f'Attack with Power {power_level}')
 
+    @classmethod
+    def adding_things(cls, num1, num2):
+        return num1 + num2
+
 
 player1 = PlayerCharacter('Adi', 23)
 player2 = PlayerCharacter('Druva', 21)
@@ -45,3 +49,7 @@ player1.power_attack(23)
 player3 = PlayerCharacter('Tom', 34)
 
 player3.shout()
+
+print(player1.adding_things(2, 3))
+
+print(PlayerCharacter.adding_things(3, 4))
