@@ -8,9 +8,9 @@ class PlayerCharacter:
     # Constructor
     # Special Method (Initialization)
     # Dunder or Magic Method
-    def __init__(self, name, age):
+    def __init__(self, name='anonymous', age=0):
         # Regular attributes
-        if (self.membership):
+        if (age > 18):
             self.name = name
             self.age = age
 
@@ -41,3 +41,7 @@ player1.shout()
 player2.shout()
 
 player1.power_attack(23)
+
+player3 = PlayerCharacter('Tom', 34)
+
+player3.shout()
