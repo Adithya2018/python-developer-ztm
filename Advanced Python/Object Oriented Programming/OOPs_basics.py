@@ -1,7 +1,16 @@
 # OOP
 
+# class / Blueprint
 class BigObject:
+    # code
     pass
+
+
+# instantiating objects
+obj1 = BigObject()
+obj2 = BigObject()
+obj3 = BigObject()
+
 
 print(type(None))
 print(type(True))
@@ -11,4 +20,4 @@ print(type('hi'))
 print(type([]))
 print(type(()))
 print(type({}))
-print(type(BigObject))
+print(type(obj1))
