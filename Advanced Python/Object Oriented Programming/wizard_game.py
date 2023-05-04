@@ -34,7 +34,7 @@ class PlayerCharacter:
 
     @staticmethod
     def subtract_things(num1, num2):
-        return num1 + num2
+        return num1 - num2
 
 
 player1 = PlayerCharacter('Adi', 23)
